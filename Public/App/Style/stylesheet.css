@@ -1,0 +1,104 @@
+:root{
+    --primary-color: #99daee;
+    --primary-hover: #99daee73; 
+    --text-main: #161515; 
+    --text-muted: #1615155d;
+    --bg-color: #f4f9fddc;
+    --bg-card: #e4f3fd9d;  
+    --shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+}
+body{
+    background: var(--bg-color);
+}
+
+
+header{
+    display:grid;
+    margin-top: 1%;
+    padding:1%;
+    grid-template-columns: auto;
+    box-shadow: var(--shadow);
+    
+            nav{ 
+        grid-column: 1 / -1;
+        text-align: center;
+        ul{
+            list-style-type: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: visible;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;}
+    ul li a{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+    }
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2%;
+}
+.buttons button{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.order-lager{
+    display: grid;
+    padding: 1%;
+    grid-template-columns: 1fr auto;
+    gap: 5%;
+    align-items: start;
+}
+.order-section, .lager-liste-sec {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    min-width: 0;
+}
+button{
+    background-color: var(--bg-card);
+    margin-top: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+button:hover{
+    background-color: var(--bg-color);
+}
+.order-list, .lager-liste{
+    font-family:trebuchet ms, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.order-list th, .order-list td, .lager-liste th, .lager-liste td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.update_password_sec, .login_form{
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 400px;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+input[type="text"], input[type="password"]{
+    padding: 10px 14px;
+        border: 1px solid #333;
+        border-radius: 10px;
+        outline: none;
+}
